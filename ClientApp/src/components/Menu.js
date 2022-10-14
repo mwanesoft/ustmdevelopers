@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 // import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import MenuIcon from '@mui/icons-material/Menu';
+import Form from 'react-bootstrap/Form';
+import Button from '@mui/material/Button';
+
+
 
 function Menu() {
   const [show, setShow] = useState(false);
@@ -24,11 +28,34 @@ function Menu() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Navigation</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+            <Form className="d-flex w-100">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className="me-2 w-100"
+                  aria-label="Search"
+                />
+                {/* <Button variant="outline-success">Search</Button> */}
+            </Form>
+            <ol>
+              <li>Home</li>
+              <li>Public</li>
+              <ol>
+                <li>Questions</li>
+                <ol>Tags</ol>
+                <ol>Users</ol>
+                <ol>Companies</ol>
+              </ol>
+            </ol>
+            <Button variant="contained" className="w-100 mt-2" color="secondary">Sign Up</Button>
+            <Button variant="contained" className="w-100 mt-2" color="secondary">Sign Up</Button>
+            <Button variant="contained" className="w-100 mt-2" color="secondary">Sign Up</Button>
+            <Button variant="contained" className="w-100 mt-2" color="secondary">Sign Up</Button>
+
+          Some text about being a real good developers LMAO.
         </Offcanvas.Body>
       </Offcanvas>
     </>

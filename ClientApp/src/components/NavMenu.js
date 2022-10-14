@@ -64,7 +64,7 @@ import Button from '@mui/material/Button';
 import Menu from './Menu';
 // import PersonIcon from '@mui/icons-material/Person';
 import PersonIcon from '@mui/icons-material/Person';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 
 
 function NavMenu() {
@@ -92,15 +92,7 @@ function NavMenu() {
               </NavDropdown.Item>
             </NavDropdown>
             
-            <Form className="d-flex w-100">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            {/* <Button variant="outline-success">Search</Button> */}
-          </Form>
+
 
           </Nav>
           <Nav>
