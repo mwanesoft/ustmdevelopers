@@ -4,7 +4,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import MenuIcon from '@mui/icons-material/Menu';
 import Form from 'react-bootstrap/Form';
 import Button from '@mui/material/Button';
-
+// import MenuItem from "./MenuItem"
 
 
 function Menu() {
@@ -35,11 +35,12 @@ function Menu() {
                 <Form.Control
                   type="search"
                   placeholder="Search"
-                  className="me-2 w-100"
+                  className="me-2 w-100 btn-outline-secondary outline-secondary"
                   aria-label="Search"
                 />
                 {/* <Button variant="outline-success">Search</Button> */}
             </Form>
+
             <ol>
               <li>Home</li>
               <li>Public</li>

@@ -80,7 +80,7 @@ function NavMenu() {
             <Nav.Link href="#features">About</Nav.Link>
             <Nav.Link href="#features">Products</Nav.Link>
             <Nav.Link href="#pricing">Teams</Nav.Link>
-            <NavDropdown title="Communities" id="collasible-nav-dropdown">
+            <NavDropdown title="Forums" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.2">C Developers</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">C# Developers</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">C++ Developers</NavDropdown.Item>
