@@ -20,7 +20,7 @@ const AppRoutes = [
   },
   {
     path: "/questions",
-    requireAuth: true,
+    requireAuth: false,
     element: <Questions />,
   },
   ...ApiAuthorzationRoutes,
