@@ -1,6 +1,6 @@
 // import React, { Component } from 'react';
 // import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { LoginMenu } from './api-authorization/LoginMenu';
 // import './NavMenu.css';
 
@@ -69,17 +69,17 @@ import PersonIcon from '@mui/icons-material/Person';
 
 function NavMenu() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="fixed-top">
       <Container>
         <Menu/>
 
-        <Navbar.Brand href="#home"> <span className='fw-bolder  purple-600'>USTM </span> <span className="fw-bold  purple-200">Developers</span>  </Navbar.Brand>
+        <Navbar.Brand tag={Link} to="/"> <span className='fw-bolder  purple-600'>USTM </span> <span className="fw-bold  purple-200">Developers</span>  </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">About</Nav.Link>
-            <Nav.Link href="#features">Products</Nav.Link>
-            <Nav.Link href="#pricing">Teams</Nav.Link>
+            <Nav.Link tag={Link} to="/features">About</Nav.Link>
+            <Nav.Link tag={Link} to="/products">Products</Nav.Link>
+            <Nav.Link tag={Link} to="/universities">Universities</Nav.Link>
             <NavDropdown title="Forums" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.2">C Developers</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">C# Developers</NavDropdown.Item>
@@ -91,12 +91,10 @@ function NavMenu() {
                 General Chat
               </NavDropdown.Item>
             </NavDropdown>
-            
-
-
+        
           </Nav>
-          <Nav>
 
+          <Nav>
             {false ? 
             <>
               <Nav.Link href="#deets">Ailton Bauque</Nav.Link>
