@@ -17,17 +17,17 @@ export class Home extends Component {
     return(
       <>
         {/* // Show case section */}
-        <section className="d-flex text-light bg-dark text-center text-sm-start p-5 p-lg-0">
+        <section className="d-flex text-light bg-dark text-center text-sm-start pt-5 p-md-5 p-lg-0">
           <div className="container">
-            <div className="d-flex align-items-center justify-content-center">
-              <div>
+            <div className="d-md-flex align-items-center justify-content-center">
+              <div className="w-md-50">
                 <h1>Question with Style! <span className="purple-600 fw-bold">Active Student</span>.</h1>
                 <p className="lead">
-                  Welcome to USTM Developers a Mozambican platform to share Knowledge. <br/>
-                  Find the best answers for your native questions that your collegues have benn through, so you don't hae to reinvent the wheal all over again 
+                  Welcome to USTM Developers a Mozambican platform to share Knowledge. </p>
+                  <p className="lead">Find the best answers for your native questions that your collegues have benn through, so you don't hae to reinvent the wheal all over again 
                 </p>
               </div>
-              <img src="images/question.svg" alt="" srcset="" className="img-fluid w-50"/>
+              <img src="images/question.svg" alt="" srcset="" className="img-fluid w-sm-25 w-md-50"/>
             </div>
           </div>
         </section>
