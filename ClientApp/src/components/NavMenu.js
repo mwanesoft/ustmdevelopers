@@ -50,8 +50,8 @@ function NavMenu() {
               {/* mui buttons */}
               <Button >Login</Button>
               <Button variant="contained" color="secondary">Sign Up</Button>
-               <LoginMenu>
-               </LoginMenu>
+               {/* <LoginMenu>
+               </LoginMenu> */}
             </div>}
             
           </Nav>
