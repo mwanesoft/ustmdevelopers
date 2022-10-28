@@ -14,9 +14,9 @@ namespace ustmdevelopers.Controllers
     [ApiController]
     public class QuestionsController : ControllerBase
     {
-        private readonly MyDbContext _context;
+        private readonly QuestionDbContext _context;
 
-        public QuestionsController(MyDbContext context)
+        public QuestionsController(QuestionDbContext context)
         {
             _context = context;
         }

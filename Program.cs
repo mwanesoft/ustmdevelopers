@@ -10,7 +10,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version())));
-builder.Services.AddDbContext<MyDbContext>(options =>
+builder.Services.AddDbContext<QuestionDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version())));
 
 

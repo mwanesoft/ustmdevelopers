@@ -1,3 +1,4 @@
+﻿
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -6,13 +7,12 @@ using ustmdevelopers.Models;
 
 namespace ustmdevelopers.Data;
 
-public class MyDbContext : DbContext
+public class AnswerDbContext : DbContext
 {
-    public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
+    public AnswerDbContext(DbContextOptions<AnswerDbContext> options) : base(options)
     {
 
     }
 
-
-    public DbSet<Question> Questions { get; set; }
+    public DbSet<Answer> Answers { get; set; }
 }

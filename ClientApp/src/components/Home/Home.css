@@ -1,0 +1,22 @@
+
+
+
+#forwho .btn-secondary{
+  background-color: #8e24aa !important;
+  border-color: #8e24aa !important;
+}
+
+#forwho .btn-secondary:hover{
+  background-color: #6a1b9a !important;
+  border-color: #6a1b9a !important;
+}
+
+#forwho .bg-dark{
+  background-color:  #b39ddb !important;
+
+}
+
+#forwho .bg-red{
+  background-color: #90caf9 !important;
+
+}
