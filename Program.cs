@@ -63,3 +63,5 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+//#FF6366 icons colors
