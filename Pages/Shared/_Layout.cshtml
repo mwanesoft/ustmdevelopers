@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ustmdevelopers</title>
+    <link rel="shortcut icon" href="~/img/brand/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ustmdevelopers.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    @* <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">ustmdevelopers</a>
@@ -30,18 +31,194 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    </header> *@
+    @* Navbar section *@
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Brand here -->
+                @* <img src="~/img/brand/logo.svg" alt="brand"> *@
+                <span class="py-1 px-3 bg-secondary text-light fw-bolder">udevs</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Questions</a>
+                    <a class="nav-link" href="#">Communities</a>
+                    @* <a class="nav-link me-5" href="#">Template</a> *@
+                    <a asp-area="" class="nav-link me-5" asp-page="/Privacy">Chats</a>
+                </div>
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+    @* Navbar section *@
+
+
+
+
+
+
+
+    @* <div class="container"> *@
+        <main role="main" class="">
             @RenderBody()
         </main>
-    </div>
+    @* </div> *@
 
-    <footer class="border-top footer text-muted">
+        <!-- Footer section -->
+    @* <footer class="pt-5">
         <div class="container">
-            &copy; 2022 - ustmdevelopers - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row row-cols-1 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col-md-3">
+                            <div>
+                                <small>
+                                    <a href="#" class="text-decoration-none">Home</a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <small>
+                                    <a href="#" class="text-decoration-none">Features</a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <small>
+                                    <a href="#" class="text-decoration-none">Pricing</a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>
+                                <small>
+                                    @* <a href="#" class="text-decoration-none">Privacy</a> *d@
+                                    <a asp-area="" asp-page="/Privacy">Privacy</a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    &copy; 2022 - ustmdevelopers
+                </div>
+            </div>
         </div>
-    </footer>
+    </footer> *@
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+  <footer class="text-white text-center text-lg-start mt-5" style="background-color: #23242a;">
+      <div class="container">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti.
+          </p>
+
+          <p>
+            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+            molestias.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <div class="form-outline form-white mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg">
+            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white lead" href="/">udevs</a>
+    </div>
+    <!-- Copyright -->
+
+    </div>
+    <!-- End of .container -->
+  </footer>
+  
+
+
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
