@@ -6,18 +6,9 @@
 
 @model IndexModel;
 
-
-@if (SignInManager.IsSignedIn(User))
-{
-        ViewData["Title"] = "Welcome page";
-    
-     <div>Hello home</div>
+@{
+  ViewData["Title"] = "Welcome page";
 }
-else
-{
-    
-
-    ViewData["Title"] = "Home page";
 
   <main>
   
@@ -387,9 +378,6 @@ else
   <!-- Main content END -->
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
-
-}
-
 
 
 

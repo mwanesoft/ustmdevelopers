@@ -3,17 +3,17 @@
 @inject UserManager<IdentityUser> UserManager
 
 
-@* @{
+@{
     
-    Layout = "app/_LayoutIn";
-} *@
+     Layout = "_Layout";
+}
 
 
-@if (SignInManager.IsSignedIn(User))
+@* @if (SignInManager.IsSignedIn(User))
 {
      Layout = "app/_LayoutIn";
 }
 else
 {
      Layout = "_Layout";
-}
+} *@
