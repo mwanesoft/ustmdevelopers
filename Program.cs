@@ -14,6 +14,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
+
+
+builder.Services.AddDbContext<InitDbContex>(options =>
+    options.UseSqlite(connectionString));
+    
     
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
